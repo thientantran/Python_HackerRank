@@ -94,3 +94,14 @@ for i in range(len(A)):
 ten.sort()
 for i in range(len(ten)):
     print(ten[i])
+n = int(input())
+l = []
+for _ in range(n):
+    s = input().split()
+    cmd = s[0]
+    args = s[1:]
+    if cmd !="print":
+        cmd += "("+ ",".join(args) +")"
+        eval("l."+cmd)
+    else:
+        print(l)
