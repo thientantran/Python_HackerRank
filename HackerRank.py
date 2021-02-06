@@ -121,3 +121,10 @@ query_name = input()
 a=student_marks[query_name]
 b=sum(a)/3
 print("%.2f" %b)
+
+#-------------------------- tuples ------------------------------------------------
+n = int(input())
+integer_list = map(int, input().split())
+a=tuple(integer_list)
+b=hash(a)
+print(b)
