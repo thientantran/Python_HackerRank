@@ -27,6 +27,7 @@ for i in range(1, int(n)+1):
         print(''.join(j))
         # join sử dụng cho list
 
+####################################### BASIC DATA TYPES ###########################################################
 ####----------------List Comprehensions------------------
 
 x = int(input())
@@ -94,6 +95,9 @@ for i in range(len(A)):
 ten.sort()
 for i in range(len(ten)):
     print(ten[i])
+
+
+#####------------------- Lists --------------- Bai hay -------------------------
 n = int(input())
 l = []
 for _ in range(n):
@@ -105,3 +109,15 @@ for _ in range(n):
         eval("l."+cmd)
     else:
         print(l)
+
+#------------------------- finding the percentage---------------------------------
+n = int(input())
+student_marks = {} # tao 1 tuple
+for _ in range(n):
+    name, *line = input().split() # lay *line để lấy list tất cả các phần tử sau phần tử đầu tiên
+    scores = list(map(float, line))
+    student_marks[name] = scores
+query_name = input()
+a=student_marks[query_name]
+b=sum(a)/3
+print("%.2f" %b)
