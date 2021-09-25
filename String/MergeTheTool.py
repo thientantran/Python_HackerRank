@@ -10,4 +10,6 @@ def merge_the_tools(string, k):
         print(trung(string[i*k:i*k+k]))
     
 
-merge_the_tools(("AABCAAADA"),3)
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
